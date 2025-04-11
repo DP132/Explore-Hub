@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- register menu -->
+     <!-- Register Now Modal -->
+<div id="registerModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Register Now</h2>
+        <form id="registerForm" class="register-form">
+            <input type="text" id="regName" placeholder="Full Name" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="tel" id="regPhone" placeholder="Phone Number" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <button type="submit" class="submit-btn">Submit</button>
+            <p id="regMessage" class="message"></p>
+        </form>
+    </div>
+</div>
+  
+     <!-- end -->
+
+    <section id="home">
+
+        <video class="video-background" src="video/Background.mp4" autoplay loop muted></video>
+
+        <nav>
+
+            <img src="./media/logo.png" alt="logo" style="height: 80px ;width: 80px;" >
+
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#Packages">Packages</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu-btn-2 hidden"><i class="fa-solid fa-xmark"></i></div>
+
+        </nav>
+
+        <div class="content">
+
+            <h1>Explore Hub </h1>
+            <p>Discover hidden gems, top spots, and must-visit places right around you.
+                Let’s find your next adventure—start by sharing your location!</p>
+
+            <button class="Register">Register Now!</button>
+
+        </div>
+
+    </section>
+
+    <section class="next">
+
+        <div class="wrap" id="Services">
+
+            <div class="heading">
+                <h1>We have the best services available for you!</h1>
+            </div>
+
+            <div class="services">
+
+                <div class="service-box">
+
+                    <img src="./media/transport_icon.jpeg.jpg">
+                    
+                    
+                    <h4><a class="name" href="https://www.ixigo.com"> Transport Services </a></h4>
+                    <p>Arrival and Departure</p>
+
+                </div>
+
+                <div class="service-box">
+
+                    <img src="images/Dinner.jpg" alt="Food">
+
+                    <h4><a class="name" href="https://www.zomato.com">Food Services</a></h4>
+                    <p>Order Food</p>
+
+                </div>
+
+                <div class="service-box">
+
+                    <img src="./media/event_icon.jpeg.jpg">
+
+                    <h4><a class="name" href="https://in.bookmyshow.com/explore/events-ahmedabad">Event Booking</a></h4>
+                    <p>Book your favourite events</p>
+
+                </div>
+
+                <div class="service-box">
+
+                    <img src="images/Hotel.jpg" alt="Hotel">
+
+                    <h4> <a class="name" href="https://www.trivago.in/en-IN/odr/hotels-ahmedabad-india?search=200-85528">Hotel Booking</a></h4>
+                    <p>Check-in/out</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="location" id="locations">
+
+            <div class="location-heading">
+                <h1>Locations</h1>
+            </div>
+
+            
+            <div class="location-content">
+                <a href="https://maps.app.goo.gl/UZmHfcBGTC9MEzvJ8">
+                <div class="location-box">
+
+                    <img src="./media/atal.jpeg" alt="India">
+
+                    <div class="text-wrap">
+                        <h5>Atal Bridge</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+
+            <a href="https://maps.app.goo.gl/Wp1bknWc2G6x5YtA6">
+                <div class="location-box">
+
+                    <img src="./media/adalaj step.jpeg" alt="Egypt">
+
+                    <div class="text-wrap">
+                        <h5>Adalaj Stepwell</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+                <a href="https://maps.app.goo.gl/65gQecVRCTKiekCt7">
+                <div class="location-box">
+
+                    
+                    <img src="./media/julta_minar.jpeg" alt="Dubai">
+                    <div class="text-wrap">
+                        <h5>Julta Minar</h5>h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+
+                <a href="https://maps.app.goo.gl/UVxnAs5NXvTJB6Fu5">
+                <div class="location-box">
+
+                    <img src="./media/jama masjid.jpeg" alt="Brazil">
+                    
+
+                    <div class="text-wrap">
+                        <h5>Jama Masjid</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+                <a href="https://maps.app.goo.gl/Rr93q3me7yEj7t2Y6">
+                <div class="location-box">
+
+                    <img src="./media/parimal.jpeg" alt="USA"> 
+                    
+
+                    <div class="text-wrap">
+                        <h5>Parimal Garden</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+                <a href="https://maps.app.goo.gl/CQRUDGbiqbwDpLeY9">
+                <div class="location-box">
+
+                   <img src="./media/riverfront.jpeg" alt="Japan"> 
+
+                    
+                    
+                    <div class="text-wrap">
+                        <h5>Sabarmati Riverfront</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+                <a href="https://maps.app.goo.gl/m1cU3RZCdSeeeR8HA">
+                <div class="location-box">
+
+                    
+                        <img src="./media/sarkhej roza.jpeg" alt="Russia">
+                   
+                    
+
+                    <div class="text-wrap">
+                        <h5>Sarkhej Roza</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+                <a href= "https://maps.app.goo.gl/ouStE13Dy6cGtRjp6">
+                <div class="location-box">
+
+                    
+                        <img src="./media/Science City,.jpeg">
+                    
+                    
+
+                    <div class="text-wrap">
+                        <h5>Science City</h5>
+                        <p>Gujarat</p>
+                    </div>
+
+                </div>
+            </a>
+
+            </div>
+
+        </div>
+
+        <div class="Package" id="Packages">
+
+            <div class="package-heading">
+                <h1>Packages</h1>
+            </div>
+
+            <div class="package-content">
+
+                <div class="package-content-wrap">
+
+                    
+                        <div class="package-box">
+                            
+                            <a href="https://www.polo-safari.in/packages/polo-forest/"><img src="./media/polo.jpeg.jpg" alt="2-star hotel"></a>
+                            
+                        
+                        <!-- <div class="details-icon"><i class="fa-solid fa-eye"></i></div> -->
+
+                </div>
+                <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                    <div class="package-details hidden">
+
+                        <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                        <h4>Polo Forest</h4>
+
+                        <div class="details">
+
+                            <ul>
+                                <li>Hotel check-in</li>
+                                <li>Freshen up</li>
+                                <li>Spent time in the swimming pool</li>
+                                <li>Lunch</li>
+                                <li>Visit Heritage monuments that were built between 11th to 15th CE</li>
+                                
+                                <!-- <li>Dinner with campfire and DJ</li> -->
+                                <!-- <li>Night stay</li> -->
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="package-content-wrap">
+
+                    <div class="package-box">
+
+                        <a href="https://sciencecity.gujarat.gov.in/fees-timing"><img src="./media/sci.jpg" alt="3-star hotel"> </a>
+                       
+                       
+
+                        <!--  -->
+
+                    </div>
+
+                    <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                    <div class="package-details hidden">
+
+                        <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                        <h4>Science City</h4>
+
+                        <div class="details">
+
+                            <ul>
+                                <li>Robotics Gallery </li>
+                                <li>Aquatic Gallery</li>
+                                <li>Imax</li>
+                                <li>Multimedia Laser and Fountain Show</li>
+                                <li>Robo Cafe</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="package-content-wrap">
+
+                    <div class="package-box">
+
+                        
+
+                       <a href="https://heritagewalkahmedabad.com/"><img src="./media/walk.jpg" alt="4-star hotel"></a>
+
+                        <!-- <div class="details-icon"><i class="fa-solid fa-eye"></i></div> -->
+
+                    </div>
+
+                   <div class="details-icon"><i class="fa-solid fa-eye"></i></div> 
+                    <div class="package-details hidden">
+
+                        <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                        <h4>Gold</h4>
+
+                        <div class="details">
+
+                            <ul>
+                                <li>Swaminarayan Temple, Kalupur</li>
+                                <li>Kavi Dalpatram Chowk, Lambeshwar Ni Pol</li>
+                                <li>Calico Dome</li>
+                                <li>Kuvavala Khancho</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="package-content-wrap">
+
+                    <div class="package-box">
+
+                       
+
+                        <a href="https://myahmedabad.blog/portfolio/modhera-patan-sidhpur/">  <img src="./media/sun.jpg" alt="5-star hotel"></a>
+
+                        <!-- -->
+
+                    </div>
+
+                    <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="package-details hidden">
+
+                        <div class="details-icon"><i class="fa-solid fa-eye"></i></div>
+
+                        <h4>Platinum</h4>
+
+                        <div class="details">
+
+                            <ul>
+                               <li>World Famous Modhera Sun Temple (Surya Mandir)</li>
+                               <li>Unesco Site Rani Ki Vav</li>
+                               <li>Famous Patola saree centr</li>
+                               <li>Historical places</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+        <div class="newsletter">
+
+            <div class="newsletter-text">
+
+                <h2>Newsletter</h2>
+                <p>Subscribe to get offers and latest <br>
+                    updates every week!</p>
+
+            </div>
+
+            <div class="input">
+
+                <div class="input-box">
+
+                    <input type="email" placeholder="E-mail">
+                    <button class="Subscribe">Subscribe</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- contact -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+              <h2>Contact Us</h2>
+              <p>We'd love to hear from you! Reach out with any questions or feedback.</p>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+              <div id="form-response" class="form-response"></div>
+            </div>
+          </section>
+          
+         <!-- end -->
+
+    </section>
+
+    <footer>
+
+        <div class="foot-panel">
+
+            <div class="links">
+
+            
+
+                <ul>
+                   
+                    <b>About Us</b>
+                        <li>The ExploreHub Team</li>
+                        <li>9090909090</li>
+                        <li>explorehub@gmail.com</li>
+                 </ul>
+                
+                
+
+            </div>
+
+            <div class="connect">
+
+                <h4>Connect</h4>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="end">
+
+            <p>Copyright © 2025 Explore Hub All Rights Reserved. <br></p>
+
+        </div>
+
+    </footer>
+
+    <!-- js link -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
